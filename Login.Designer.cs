@@ -73,7 +73,7 @@
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(221, 517);
+            this.guna2Panel1.Size = new System.Drawing.Size(221, 522);
             this.guna2Panel1.TabIndex = 1;
             // 
             // guna2HtmlLabel3
@@ -213,6 +213,7 @@
             this.Controls.Add(this.txtPswd);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txtUsn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

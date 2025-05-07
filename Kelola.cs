@@ -109,7 +109,7 @@ namespace lks_test
                 cmd.ExecuteNonQuery();
                 display();
                 hapus();
-                MessageBox.Show("Input berhasil!");
+                MessageBox.Show("Input berhasil!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 koneksi.Close();
             }
         }

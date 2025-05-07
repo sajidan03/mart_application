@@ -16,7 +16,7 @@ namespace lks_test
         {
             koneksi.Open();
             string hasil;
-            cmd = new SqlCommand("SELECT * FROM [tbl_transaksi] ORDER BY no_transaksi DESC", koneksi);
+            cmd =  new SqlCommand("SELECT * FROM tb;l_transaksi order by no_transaksi desc", koneksi);
             rd = cmd.ExecuteReader();
             if (rd.HasRows)
             {

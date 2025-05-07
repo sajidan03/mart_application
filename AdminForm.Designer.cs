@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.jam = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.tgl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -43,6 +46,7 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -51,6 +55,8 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.jam);
+            this.guna2Panel2.Controls.Add(this.tgl);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
@@ -62,6 +68,25 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(585, 513);
             this.guna2Panel2.TabIndex = 5;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            // 
+            // jam
+            // 
+            this.jam.BackColor = System.Drawing.Color.Transparent;
+            this.jam.Location = new System.Drawing.Point(521, 56);
+            this.jam.Name = "jam";
+            this.jam.Size = new System.Drawing.Size(51, 18);
+            this.jam.TabIndex = 8;
+            this.jam.Text = "00.00.00";
+            // 
+            // tgl
+            // 
+            this.tgl.BackColor = System.Drawing.Color.Transparent;
+            this.tgl.Location = new System.Drawing.Point(456, 32);
+            this.tgl.Name = "tgl";
+            this.tgl.Size = new System.Drawing.Size(116, 18);
+            this.tgl.TabIndex = 7;
+            this.tgl.Text = "Minggu, 3 Mei 2008";
             // 
             // guna2HtmlLabel3
             // 
@@ -143,6 +168,7 @@
             this.awal.Size = new System.Drawing.Size(221, 36);
             this.awal.TabIndex = 1;
             this.awal.Value = new System.DateTime(2025, 3, 10, 11, 15, 38, 519);
+            this.awal.ValueChanged += new System.EventHandler(this.awal_ValueChanged);
             // 
             // dataGridView1
             // 
@@ -254,10 +280,11 @@
             // 
             // AdminForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(822, 513);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
@@ -286,5 +313,8 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel jam;
+        private Guna.UI2.WinForms.Guna2HtmlLabel tgl;
+        private System.Windows.Forms.Timer timer1;
     }
 }

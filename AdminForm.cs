@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,8 +22,17 @@ namespace lks_test
         public AdminForm()
         {
             InitializeComponent();
+            Timer timer = new Timer();  
+            timer.Start();
+            timer.Interval = 1000;
+            timer.Tick += display;
         }
-
+        public void display(object sender, EventArgs e)
+        {
+            CultureInfo c = new CultureInfo("id-ID");
+            tgl.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy", c);
+            jam.Text = DateTime.Now.ToString("T");
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             foreach (Control control in guna2Panel2.Controls)
@@ -102,6 +112,16 @@ namespace lks_test
             laporan.BringToFront();
             admin.Hide();
             laporan.Show();
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void awal_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

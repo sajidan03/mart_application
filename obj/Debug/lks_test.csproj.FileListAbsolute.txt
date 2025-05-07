@@ -41,3 +41,195 @@ E:\Sajidan\C#\lks_test\bin\Debug\System.Memory.xml
 E:\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.xml
 E:\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Sajidan\C#\lks_test\obj\Debug\lks_test.tes_logika.resources
+E:\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.manifest
+E:\Sajidan\C#\lks_test\bin\Debug\lks_test.application
+E:\Sajidan\C#\lks_test\obj\Debug\lks_test.exe.manifest
+E:\Sajidan\C#\lks_test\obj\Debug\lks_test.application
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.config
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.manifest
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.application
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.pdb
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\Guna.UI2.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.pdb
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.AssemblyReference.cache
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.AdminForm.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_mart.gudang.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kasir.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kelola.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Laporan.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Login.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Properties.Resources.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.tes_logika.resources
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.GenerateResource.cache
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.CoreCompileInputs.cache
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe.manifest
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.application
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.Up2Date
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe
+C:\Users\Pongo\Videos\Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.pdb
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.config
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.manifest
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.application
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.pdb
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Guna.UI2.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.pdb
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.AssemblyReference.cache
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.AdminForm.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_mart.gudang.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kasir.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kelola.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Laporan.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Login.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Properties.Resources.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.tes_logika.resources
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.GenerateResource.cache
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.CoreCompileInputs.cache
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe.manifest
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.application
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.Up2Date
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe
+D:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.pdb
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.AssemblyReference.cache
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.AdminForm.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_mart.gudang.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kasir.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kelola.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Laporan.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Login.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Properties.Resources.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.tes_logika.resources
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.GenerateResource.cache
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.CoreCompileInputs.cache
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.pdb
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.config
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.manifest
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.application
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.pdb
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Guna.UI2.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.pdb
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe.manifest
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.application
+G:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.Up2Date
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.config
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe.manifest
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.application
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.exe
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\lks_test.pdb
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Guna.UI2.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.pdb
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ClosedXML.Parser.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\ExcelNumberFormat.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\RBush.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\SixLabors.Fonts.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Buffers.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Memory.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Numerics.Vectors.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.AssemblyReference.cache
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.AdminForm.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_mart.gudang.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kasir.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Kelola.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Laporan.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Login.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.Properties.Resources.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.tes_logika.resources
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.GenerateResource.cache
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.CoreCompileInputs.cache
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe.manifest
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.application
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.csproj.Up2Date
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.exe
+E:\LKS Sajidan\Sajidan\C#\lks_test\obj\Debug\lks_test.pdb

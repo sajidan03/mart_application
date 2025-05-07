@@ -437,12 +437,12 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(75, 330);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(116, 343);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(127, 30);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(46, 30);
             this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.Text = "Kelola barang";
+            this.guna2HtmlLabel1.Text = "Kasir";
             // 
             // guna2Button3
             // 
@@ -455,7 +455,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.Firebrick;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(60, 402);
+            this.guna2Button3.Location = new System.Drawing.Point(55, 403);
             this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(165, 39);

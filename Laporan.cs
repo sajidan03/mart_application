@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -24,8 +25,17 @@ namespace lks_test
         public Laporan()
         {
             InitializeComponent();
+            Timer timer = new Timer();
+            timer.Start(); 
+            timer.Interval = 1000;
+            timer.Tick += tick;
         }
-
+        public void tick(object sender, EventArgs e)
+        {
+            CultureInfo c = new CultureInfo("id-ID");
+            tgl.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy", c);
+            jam.Text = DateTime.Now.ToString("T");
+        }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
@@ -135,7 +145,7 @@ namespace lks_test
             //    }
             //}
             try
-            {
+            { 
                 using (var workbook = new XLWorkbook())
                 {
                     var worksheet = workbook.Worksheets.Add("Chart Data");
@@ -184,6 +194,11 @@ namespace lks_test
             {
                 MessageBox.Show("Error: " + ex.Message, "Gagal", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

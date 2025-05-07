@@ -33,6 +33,7 @@
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,7 +42,8 @@
             this.awal = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.tgl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.jam = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -59,6 +61,8 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.jam);
+            this.guna2Panel2.Controls.Add(this.tgl);
             this.guna2Panel2.Controls.Add(this.guna2Button3);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
@@ -73,6 +77,26 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(585, 513);
             this.guna2Panel2.TabIndex = 4;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.AutoRoundedCorners = true;
+            this.guna2Button3.BorderRadius = 17;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(434, 277);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(126, 36);
+            this.guna2Button3.TabIndex = 25;
+            this.guna2Button3.Text = "Ekspor";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Button2
             // 
@@ -193,23 +217,23 @@
             this.guna2HtmlLabel7.TabIndex = 16;
             this.guna2HtmlLabel7.Text = "Kelola Laporan";
             // 
-            // guna2Button3
+            // tgl
             // 
-            this.guna2Button3.Animated = true;
-            this.guna2Button3.BorderRadius = 6;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(434, 277);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(126, 36);
-            this.guna2Button3.TabIndex = 25;
-            this.guna2Button3.Text = "Ekspor";
-            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            this.tgl.BackColor = System.Drawing.Color.Transparent;
+            this.tgl.Location = new System.Drawing.Point(446, 21);
+            this.tgl.Name = "tgl";
+            this.tgl.Size = new System.Drawing.Size(116, 18);
+            this.tgl.TabIndex = 26;
+            this.tgl.Text = "Minggu, 3 Mei 2008";
+            // 
+            // jam
+            // 
+            this.jam.BackColor = System.Drawing.Color.Transparent;
+            this.jam.Location = new System.Drawing.Point(508, 45);
+            this.jam.Name = "jam";
+            this.jam.Size = new System.Drawing.Size(51, 18);
+            this.jam.TabIndex = 27;
+            this.jam.Text = "00.00.00";
             // 
             // Laporan
             // 
@@ -240,5 +264,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel jam;
+        private Guna.UI2.WinForms.Guna2HtmlLabel tgl;
     }
 }

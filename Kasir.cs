@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,14 +27,18 @@ namespace lks_test
         public Kasir()
         {
             InitializeComponent();
-            txtSatuan.ReadOnly = true;
             menu_load();
             table_load();
+            txtSatuan.ReadOnly = true;
             btnPrint.Enabled = false;
             btnSimpan.Enabled = false;
-            printDocument1 = new PrintDocument();
-            PaperSize customPaperSize = new PaperSize("Struk 80mm", 300, 800);
-            printDocument1.DefaultPageSettings.PaperSize = customPaperSize;
+            //printDocument1 = new PrintDocument();
+            //PaperSize customPaperSize = new PaperSize("Struk 80mm", 300, 800);
+            //printDocument1.DefaultPageSettings.PaperSize = customPaperSize;
+            //printDocument1.PrintPage += PrintReceipt2;
+            printDocument1  = new PrintDocument();
+            PaperSize cs = new PaperSize("Struk 80mm", 300, 800);
+            printDocument1.DefaultPageSettings.PaperSize = cs;
             printDocument1.PrintPage += PrintReceipt2;
         }
         public void table_load()
@@ -50,13 +55,23 @@ namespace lks_test
 
             dgv.Columns[6].Visible = false;
         }
+        public void table_mulai()
+        {
+            dgv.Columns[0].Name = "No Transaksi";
+            dgv.Columns[1].Name = "Kode barang";
+            dgv.Columns[2].Name = "Nama barang";
+            dgv.Columns[3].Name = "Satuan barang";
+            dgv.Columns[4].Name = "Qtt";
+            dgv.Columns[5].Name = "Total";
+            dgv.Columns[6].Name = "id";
+        }
         private void btnPrint_Click(object sender, EventArgs e)
         {
             PrintPreviewDialog pd = new PrintPreviewDialog
             {
                 Document = printDocument1,
-                Width = 800,
-                Height = 600
+                Height = 600,
+                Width = 400,
             };
             pd.ShowDialog();
         }
@@ -87,7 +102,6 @@ namespace lks_test
                     koneksi.Close();
                 }
             }
-
         }
         private void btnBayar_Click(object sender, EventArgs e)
         {
@@ -111,7 +125,7 @@ namespace lks_test
         }
         private void PrintReceipt2(object sender, PrintPageEventArgs e)
         {
-            Font font = new Font("Courier New", 12);
+            System.Drawing.Font font = new System.Drawing.Font("Courier New", 12);
             float yPos = 10;
             float leftMargin = 0;
             StringBuilder receiptText = new StringBuilder();
@@ -172,11 +186,15 @@ namespace lks_test
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
+            string noTr = "TRS00" + number.ToString();
+            string kdoe = cmbMenu.Text.ToString().Split('-')[0];
+            string nm = cmbMenu.Text.ToString().Split('-')[1];
             string no = "TRS00" + number.ToString();
             string kode = cmbMenu.Text.ToString().Split('-')[0];
             string nama = cmbMenu.Text.ToString().Split('-')[1];
             dgv.Rows.Add(1);
             dgv.Rows[dgv.Rows.Count - 2].Cells[0].Value = no;
+            //dgv.Rows[dgv.Rows.Count - 2].Cells[0].Value = no;
             dgv.Rows[dgv.Rows.Count - 2].Cells[1].Value = kode;
             dgv.Rows[dgv.Rows.Count - 2].Cells[2].Value = nama;
             dgv.Rows[dgv.Rows.Count - 2].Cells[3].Value = txtSatuan.Text;
@@ -193,7 +211,6 @@ namespace lks_test
                 int tt = Convert.ToInt32(dr.Cells[5].Value);
                 total += tt;
             }
-
             totHar.Text = total.ToString();
             //
             if (Convert.ToInt32(totHar.Text) > 500000)
@@ -204,7 +221,6 @@ namespace lks_test
             double totalBayar = total - diskon;
             totBay.Text = totalBayar.ToString();
         }
-
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             koneksi.Open();
@@ -278,9 +294,9 @@ namespace lks_test
 
         private void txtQtt_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                e.Handled = true; 
+                e.Handled = true;
             }
         }
 

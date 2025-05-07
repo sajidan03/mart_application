@@ -9,13 +9,13 @@ namespace lks_test
 {
     internal class connection
     {
-        private static string sqlCmd = "Data Source=DESKTOP-MOUI7DH\\SQLEXPRESS;Initial Catalog=lks_mart;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         private static SqlConnection koneksi;
+        private static string sqlCommand= "Data Source=DESKTOP-MOUI7DH\\SQLEXPRESS;Initial Catalog=lksmart;Integrated Security=True;TrustServerCertificate=True";
         public static SqlConnection Connect()
         {
             if (koneksi == null)
             {
-                koneksi = new SqlConnection(sqlCmd);
+                koneksi = new SqlConnection(sqlCommand);
             }
             return koneksi;
         }

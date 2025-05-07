@@ -23,7 +23,7 @@ namespace lks_mart
         DataTable dt;
         SqlDataReader rd;
         string imagePath = "";
-        string lokasi = @"E:\Sajidan\C#\lks_test\assets";
+        string lokasi = @"D:\LKS Sajidan\Sajidan\API\lksApi\assets";
         public gudang()
         {
             InitializeComponent();
@@ -81,29 +81,57 @@ namespace lks_mart
                 {
                     koneksi.Open();
                 }
-                if (txtHarga.Text.Length == 0 || txtJml.Text.Length == 0 || txtKode.Text.Length == 0 || txtNama.Text.Length == 0 || txtSatuan.Text.Length == 0)
+
+                if (txtHarga.Text.Length == 0 || txtJml.Text.Length == 0 || txtKode.Text.Length == 0 || txtNama.Text.Length == 0 || txtSatuan.Text.Length == 0 || string.IsNullOrEmpty(imagePath))
                 {
-                    MessageBox.Show("Tolong isi semua inputan!");
-                }
-                else
-                {
-                    string namaFile = Path.GetFileName(imagePath);
-                    string lokasiSave = Path.Combine(lokasi, namaFile);
-                    File.Copy(imagePath, lokasiSave, true);
-                    cmd = new SqlCommand("INSERT INTO [tbl_barang] VALUES (@kode, @nama, @exp, @jml, @satuan, @harga, @image)", koneksi);
-                    cmd.Parameters.AddWithValue("@kode", txtKode.Text.Trim());
-                    cmd.Parameters.AddWithValue("@nama", txtNama.Text.Trim());
-                    cmd.Parameters.AddWithValue("@exp", dtpEx.Value.ToString("yyyy-MM-dd"));
-                    cmd.Parameters.AddWithValue("@jml", txtJml.Text.Trim());
-                    cmd.Parameters.AddWithValue("@satuan", txtSatuan.Text.Trim());
-                    cmd.Parameters.AddWithValue("@harga", txtHarga.Text.Trim());
-                    cmd.Parameters.AddWithValue("@image", namaFile);
-                    cmd.ExecuteNonQuery();
-                    display();
-                    hapus();
+                    MessageBox.Show("Tolong isi semua inputan dan pilih gambar!");
+                    return;
                 }
 
+                //cmd = new SqlCommand(@"INSERT INTO [tbl_barang] VALUES (@kode, @nama, @exp, @jml, @satuan, @harga, '') SELECT SCOPE_IDENTITY", koneksi);
+                //cmd.Parameters.AddWithValue("@kode", txtKode.Text.Trim());
+                //cmd.Parameters.AddWithValue("@nama", txtNama.Text.Trim());
+                //cmd.Parameters.AddWithValue("@exp", dtpEx.Value.ToString("yyyy-MM-dd"));
+                //cmd.Parameters.AddWithValue("@jml", txtJml.Text.Trim());
+                //cmd.Parameters.AddWithValue("@satuan", txtSatuan.Text.Trim());
+                //cmd.Parameters.AddWithValue("@harga", txtHarga.Text.Trim());
+                //int newId1 = Convert.ToInt32(cmd.ExecuteScalar());
+                //string extensiFile = Path.GetExtension(imagePath);
+                //string namaBaru = newId1 + extensiFile;
+                //string target = Path.Combine(namaBaru);
 
+                //File.Copy(imagePath, target, true);
+                //cmd = new SqlCommand("UPDATE tbl_barang SET image = @image WHERE id_barang = @id");
+                //cmd.Parameters.AddWithValue("@image", namaBaru);
+                //cmd.Parameters.AddWithValue("@id", newId1);
+                //cmd.ExecuteNonQuery();
+                //MessageBox.Show("Data berhasil disimpan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //display();
+                //hapus();
+                //imagePath = "";
+
+
+                cmd = new SqlCommand(@"INSERT INTO tbl_barang VALUES (@kode, @nama, @exp, @jml, @satuan, @harga, '') SELECT SCOPE_IDENTITY()", koneksi);
+                cmd.Parameters.AddWithValue("@kode", txtKode.Text.Trim());
+                cmd.Parameters.AddWithValue("@nama", txtNama.Text.Trim());
+                cmd.Parameters.AddWithValue("@exp", dtpEx.Value);
+                cmd.Parameters.AddWithValue("@jml", txtJml.Text.Trim());
+                cmd.Parameters.AddWithValue("@satuan", txtSatuan.Text.Trim());
+                cmd.Parameters.AddWithValue("@harga", txtHarga.Text.Trim());
+                int newId = Convert.ToInt32(cmd.ExecuteScalar());
+                string extensi = Path.GetExtension(imagePath);
+                string namaBaru = newId + extensi;
+                string target = Path.Combine(lokasi, namaBaru);
+                //
+                File.Copy(imagePath, target, true);
+                cmd = new SqlCommand("UPDATE tbl_barang set image = @image where id_barang = @id",koneksi);
+                cmd.Parameters.AddWithValue("@image", namaBaru);
+                cmd.Parameters.AddWithValue("@id", newId);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Input success!", "Berhasil", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                display();
+                hapus();
+                imagePath = "";
             }
             catch (Exception ex)
             {
@@ -117,6 +145,7 @@ namespace lks_mart
                 }
             }
         }
+
 
         private void txtId_TextChanged(object sender, EventArgs e)
         {
@@ -161,7 +190,6 @@ namespace lks_mart
                 cmd.Parameters.AddWithValue("@satuan", txtSatuan.Text.Trim());
                 cmd.Parameters.AddWithValue("@harga", txtHarga.Text.Trim());
                 cmd.Parameters.AddWithValue("@image", namaFile);
-
                 cmd.ExecuteNonQuery();
                 display();
             }
@@ -207,7 +235,16 @@ namespace lks_mart
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-
+            koneksi.Open();
+            cmd = new SqlCommand("INSERT INTO tbl_log VALUES (@waktu, @akt, @id)", koneksi);
+            cmd.Parameters.AddWithValue("@waktu", DateTime.Now);
+            cmd.Parameters.AddWithValue("@akt", "Login");
+            cmd.Parameters.AddWithValue("@id", Session.id_user);    
+            cmd.ExecuteNonQuery();
+            koneksi.Close();
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -220,15 +257,26 @@ namespace lks_mart
                 txtJml.Text = row.Cells["jumlah_barang"].Value.ToString();
                 txtSatuan.Text = row.Cells["satuan"].Value.ToString();
                 txtHarga.Text = row.Cells["harga_satuan"].Value.ToString();
-                string namaFile = row.Cells["image"].Value.ToString();
-                string lokasiSimpan = Path.Combine(lokasi, namaFile);
-                if (File.Exists(lokasiSimpan))
+                //string namaFile = row.Cells["image"].Value.ToString();
+                //string lokasiSimpan = Path.Combine(lokasi, namaFile);
+                //if (File.Exists(lokasiSimpan))
+                //{
+                //    using (FileStream fs = new FileStream(lokasiSimpan, FileMode.Open, FileAccess.Read))
+                //    {
+                //        guna2PictureBox2.Image?.Dispose();
+                //        guna2PictureBox2.Image = Image.FromStream(fs);
+                //    }
+                //}
+                string namaFiles = row.Cells["image"].Value.ToString();
+                string lokasisave = Path.Combine(lokasi, namaFiles);
+                if (File.Exists(lokasisave))
                 {
-                    using (FileStream fs = new FileStream(lokasiSimpan, FileMode.Open, FileAccess.Read))
+                    using (FileStream fs = new FileStream(lokasisave, FileMode.Open, FileAccess.Read))
                     {
                         guna2PictureBox2.Image?.Dispose();
-                        guna2PictureBox2.Image = Image.FromStream(fs);
+                        guna2PictureBox2.Image = Image.FromStream(fs);  
                     }
+
                 }
             }
         }
@@ -236,13 +284,12 @@ namespace lks_mart
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Name files|*.jpg;|*.png;|*.jpeg";
             if (opf.ShowDialog() == DialogResult.OK)
             {
                 imagePath = opf.FileName;
                 if (guna2PictureBox2.Image != null)
                 {
-                    guna2PictureBox2.Image.Dispose();
+                    guna2PictureBox2.Dispose();
                     guna2PictureBox2.Image = null;
                 }
                 FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read);
@@ -302,6 +349,11 @@ namespace lks_mart
         }
 
         private void S(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
